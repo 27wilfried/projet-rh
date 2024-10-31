@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Créer votre compte</title>
+    <style>
+        * body {
+            background-color: #e5e7e6;
+        }
+
+        .header {
+            background-color: #0000FF;
+            height: 60px;
+        }
+
+        .header .circle {
+            width: 50px;
+            height: 50px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
+
+        .form-section {
+            padding: 20px;
+        }
+
+        .btn-save {
+            background-color: #d3e0f0;
+            color: #000;
+        }
+
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social-buttons button {
+            margin-bottom: 10px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .search-input {
+            width: 300px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header text-center">
+        <div class="circle"></div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="search-container">
+            <div class="input-group rounded">
+                <input type="search" class="form-control search-input mx-auto" placeholder="Search" aria-label="Search"
+                    aria-describedby="search-addon" style="width: 50%;" />
+                <span class="input-group-text border-0" id="search-addon">
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2 class="text-center py-5">Créer votre compte</h2>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <form></form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Nom</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nom">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <span>OU</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-row"></div>
+                    <div class="form-group col-md-6 social-buttons">
+                        <button type="button" class="btn btn-outline-primary">Compte LinkedIn</button>
+                        <button type="button" class="btn btn-outline-danger">Compte Google</button>
+                        <button type="button" class="btn btn-outline-primary">Compte Microsoft</button>
+                        <button type="button" class="btn btn-outline-info">Compte Skype</button>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-save">Enregistrer</button>
+
+        </div>
+
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

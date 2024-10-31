@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancer votre campagne</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * body {
+            background-color: #e5e7e6;
+        }
+
+        .navbar-custom {
+            background-color: #0000FF;
+        }
+
+        .btn-custom {
+            border-radius: 30px;
+            padding: 0.5rem 1.5rem;
+        }
+
+        .search-bar {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white btn-custom" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn-custom" href="#">Cont</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white btn-custom" href="#">Not</a>
+                    </li>
+                </ul>
+                <button class="btn btn-circle bg-light rounded-circle"></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="container">
+        <div class="search-bar text-center">
+            <input type="text" class="form-control mx-auto" style="width: 50%;" placeholder="Search">
+        </div>
+        <h2 class="text-center">Quelques offres disponibles </h2>
+    </div>
+
+    <!-- Form Section -->
+    <div class="container mt-5">
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="titrePoste" class="form-label">Titre du poste</label>
+                    <input type="text" class="form-control" id="titrePoste">
+                </div>
+                <div class="col-md-4">
+                    <label for="descriptionOffre" class="form-label">Description de l'offre d'emploi</label>
+                    <input type="text" class="form-control" id="descriptionOffre">
+                </div>
+                <div class="col-md-4">
+                    <label for="conditionsPoste" class="form-label">Conditions du poste</label>
+                    <input type="text" class="form-control" id="conditionsPoste">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="dureeCandidature" class="form-label">Durée de la candidature</label>
+                    <input type="text" class="form-control" id="dureeCandidature">
+                </div>
+                <div class="col-md-4 offset-md-8 text-end">
+                    <button type="submit" class="btn btn-primary">Soumettre</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

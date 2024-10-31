@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Informations d'administrateur</title>
+    <style>
+        * body {
+            background-color: #e5e7e6;
+        }
+
+        .header {
+            background-color: #0000FF;
+            height: 60px;
+        }
+
+        .header .circle {
+            width: 50px;
+            height: 50px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
+
+        .form-section {
+            padding: 20px;
+        }
+
+        .btn-save {
+            background-color: #d3e0f0;
+            color: #000;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .search-input {
+            width: 300px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header text-center">
+        <div class="circle"></div>
+    </div>
+
+    <div class="container mt-4">
+        <!-- Search Input with Avatar -->
+        <div class="search-container">
+            <div class="input-group rounded">
+                <input type="search" class="form-control search-input" placeholder="Search" aria-label="Search"
+                    aria-describedby="search-addon" />
+                <span class="input-group-text border-0" id="search-addon">
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
+
+            <!-- Avatar ajouté ici -->
+            <div class="avatar"></div>
+        </div>
+
+        <div class="form-section">
+            <h2 class="text-center">Compléter vos informations d'administrateur</h2>
+
+            <div class="row py-4 ">
+                <!-- Colonne 1 -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <select id="country" class="form-control">
+                                <option selected>Choisir votre pays</option>
+                                <!-- Add country options here -->
+                            </select>
+                        </div> <br>
+                        <p class="offset-1" style="text-align: center;">ou</p>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="institution"
+                                placeholder="Le nom de l'institution">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="companyDomain"
+                                placeholder="Choisir domaine de votre entreprise">
+                        </div>
+
+
+                    </form>
+                </div>
+
+                <!-- Colonne 2 -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="position" placeholder="Votre poste de travail">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="phone" placeholder="Numéro de téléphone">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="address" placeholder="Adresse de l'entreprise">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="bp" placeholder="BP">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="location" placeholder="Localisation">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-save" style="background-color: white;">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
